@@ -1,0 +1,26 @@
+
+.profile{
+    width:15rem;
+    height:360px;
+}
+.image_profile{
+    width: 80px;
+    height: 80px;
+    border-radius:35px ;
+
+}
+.image_div{
+    background-color: rgb(56, 56, 107);
+    height: 70px;
+    align-items: center;
+    padding: 20px;
+
+}
+@media screen and (max-width:768px){
+    .profile{
+        width:350px;
+        height:360px;
+        margin-bottom: 15px;
+
+    }
+}

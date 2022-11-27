@@ -1,0 +1,41 @@
+.text_css{
+    width: 450px;
+    height: 150px;
+}
+.text_css:focus {
+    outline: none !important;
+  }
+  .icon {  
+    height: 40px;  
+    width: 40px;  
+  }
+  
+  .button {  
+    background: transparent;  
+    outline: none;  
+    border: none;  
+  }  
+  .multiple_select{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  .all_icon{
+        width: 20px;
+        height: 20px;
+        color: gray;
+        margin-left: 15px;
+  }
+  .any_one{
+    width: 70px;
+    height: 25px;
+    color: gray;
+    margin-left: 15px;
+}
+.post_button{
+  width: 70px;
+  height: 25px;
+  color: gray;
+  font-size: 10px;
+  margin-left: 15px;
+}
