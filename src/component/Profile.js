@@ -1,12 +1,15 @@
 import React from "react";
 import './Profile.css';
 import profile_image from '../images/images.jpeg'
-const Profile =() =>{
+import { Link } from "react-router-dom";
+
+const Profile =() =>{ 
     return(
         <div className="card profile">
             <div class="image_div ">
-            <img className=" image_profile" src={profile_image} alt=""/>
-
+              <Link to='profile_details'>
+              <img className=" image_profile" src={profile_image} alt=""/>
+            </Link>
             </div>
         <div class="card-body mt-5">
           <h6 class="card-title">Swati Vishwakarma</h6>
