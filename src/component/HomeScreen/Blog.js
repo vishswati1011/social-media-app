@@ -19,9 +19,7 @@ const Home = () => {
                 <div class="list_Css"><VideoUpload/> </div>
                 <div class="list_Css"><EventUploader/></div>
                 <div class="list_Css"><MdArticle color="red" />Write article</div>
-            </div>
-
-
+            </div> 
 
             
         <div className="col-xs-12 col-sm-12 col-md-12 mt-5">

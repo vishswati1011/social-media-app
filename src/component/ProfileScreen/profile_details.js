@@ -4,7 +4,8 @@ import profile_image from '../../images/images.jpeg'
 
 const ProfileDetails = ()=>{
     return(
-        <><div className="profile_details">
+        <> <div className="row ml-0"> 
+        <div className="profile_details">
           <div className="col-xs-12 col-sm-12 col-md-6">
             <div className="pd_left">
               <div className="pd_row">
@@ -32,6 +33,7 @@ const ProfileDetails = ()=>{
              
             </div>
           </div>
+        </div>
         </div>
         </>
     )
