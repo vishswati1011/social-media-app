@@ -6,7 +6,7 @@
     background-color: #e4e6e6;
   }
   p {
-    margin: 0;
+    margin: 0rem !important;
   }
   .container {
     padding-right: 0;
@@ -422,3 +422,26 @@
       flex-basis: 100%;
     }
   }
+  @media (min-width: 280px) and (max-width: 767px) {
+    .profile_info {
+      display: block;
+  }
+  .my_post .post_bottom { 
+    display: block;
+  }
+  .friends_post .info {
+    display: inline;
+  }
+
+  .profile_details { 
+    display: block;
+  }
+  .pd_right { 
+    margin-top: 20px;
+}
+.row {  
+  margin-right: calc(-2.2 * var(--bs-gutter-x)) !important;
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+}
+

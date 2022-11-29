@@ -7,7 +7,8 @@ const CreatePostFromProfile =() =>{
         
       
       <div class="col-xs-12 col-sm-12 col-md-7">
-      <div class="post_col">
+      <div class="post_col"> 
+
         <div class="my_post">
           <div class="post_top">
             <img src={profile_image} />
@@ -34,6 +35,9 @@ const CreatePostFromProfile =() =>{
             </div>
           </div>
         </div>
+
+
+
 
         <div class="friends_post">
           <div class="friend_post_top">
