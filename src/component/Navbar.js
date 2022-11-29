@@ -15,7 +15,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
+import '../css/Navbar.css'
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -158,17 +159,24 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" style={{backgroundColor:"gray"}}>
         <Toolbar>
-        <NavLink to="/" className="ba">
+        <NavLink to="/" className="nav_link">
+        
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
+            className="iconcss"
           >
-            <MenuIcon />
+
+            <MenuIcon 
+           
+            />
+
           </IconButton>
-          </NavLink>
+          
+</NavLink>
        <Typography
             variant="h6"
             noWrap
