@@ -1,0 +1,20 @@
+.home_css{
+    padding: auto;
+    margin-top:75px ;
+    height: 1000px !important;
+}
+.sidebar{
+    position: fixed;
+  top: 5rem;
+  flex: 0.2;
+  border-radius: 10px;
+  text-align: center;
+}
+@media screen and (max-width:768px){
+    .detail_css{
+        display: none;
+    }
+    .sidebar{
+        position: initial; 
+    }
+}

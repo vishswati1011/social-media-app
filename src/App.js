@@ -1,19 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
+
 import Navbar from "./component/Navbar";
-import Home from "./component/Home";
+import Home from "./component/HomeScreen/index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ProfileDetails from "./component/Profile/profile_details";
+import Profile from "./component/ProfileScreen/index";
 function App() {
   return (
-    <div className="App">
+    <div style={{backgroundColor:'#e4e6e6'}}>
       <Router>
-
       <Navbar /> 
+      <div style={{marginTop:'5rem'}}>
         <Routes>
           <Route  path="/" element={<Home />} />
-          <Route exact path="/profile_details" element={<ProfileDetails />} />
+          <Route exact path="/profile_details" element={<Profile />} />
         </Routes>
+        </div>
       </Router>
     </div>
   );

@@ -1,12 +1,12 @@
 .main_outer{
     display: flex;
     flex-wrap: wrap;
-    width: 35rem;
+    /* width: 35rem; */
     height: 8rem;
     background-color: rgb(255, 255, 255);
     border-radius: 15px ;
-    padding-left: 10px;
-    padding-right: 15px;
+    /* padding-left: 10px;
+    padding-right: 15px; */
 }
 .post_input{
     border-radius: 15px;

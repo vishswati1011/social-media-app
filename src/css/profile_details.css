@@ -415,4 +415,10 @@
     .profile_info {
       display: inline-grid;
     }
+    .info_col {
+      flex-basis: 80%;
+    }
+    .post_col {
+      flex-basis: 100%;
+    }
   }

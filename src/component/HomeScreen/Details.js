@@ -1,8 +1,7 @@
 import React from "react";
-const Home = () => {
+const Details = () => {
     return (
-        <div>
-            <div class="card" style={{ width: "18rem" }} className="text-left">
+            <div class="card " style={{ width: "18rem" }} className="text-left">
                 <ul class="list-group">
                     <li class="list-group-item">Cras justo odio</li>
                     <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -27,8 +26,7 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
-        </div>
     )
 }
 
-export default Home;
+export default Details;

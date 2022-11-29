@@ -15,7 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-
+import {NavLink} from 'react-router-dom'
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -156,8 +156,9 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{backgroundColor:"gray"}}>
+      <AppBar position="fixed" style={{backgroundColor:"gray"}}>
         <Toolbar>
+        <NavLink to="/" className="ba">
           <IconButton
             size="large"
             edge="start"
@@ -167,7 +168,8 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          </NavLink>
+       <Typography
             variant="h6"
             noWrap
             component="div"
@@ -175,6 +177,7 @@ export default function PrimarySearchAppBar() {
           >
             LinkedIn
           </Typography>
+       
           <Search>
             <SearchIconWrapper>
               <SearchIcon />

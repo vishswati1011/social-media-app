@@ -1,10 +1,12 @@
 import React from "react";
-import './Profile.css';
-import profile_image from '../images/images.jpeg'
+import '../../css/Profile.css';
+import profile_image from '../../images/images.jpeg'
 import { Link } from "react-router-dom";
 
 const Profile =() =>{ 
     return(
+      <div class="col-xs-12 col-sm-12 col-md-6 ">
+      
         <div className="card profile">
             <div class="image_div ">
               <Link to='profile_details'>
@@ -12,7 +14,7 @@ const Profile =() =>{
             </Link>
             </div>
         <div class="card-body mt-5">
-          <h6 class="card-title">Swati Vishwakarma</h6>
+          <h6 class="card-title">Name</h6>
           <p class="card-text">Project Lead Developer at Appsdeployer | MERN Full-Stack-Developer</p>
         </div>
         <ul class="list-group list-group-flush text-left">
@@ -26,6 +28,7 @@ const Profile =() =>{
           <li class="list-group-item">My items</li>
         </ul>
        
+      </div>
       </div>
     )
 }
