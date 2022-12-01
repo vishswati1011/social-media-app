@@ -1,20 +1,20 @@
 import React from "react";
 import '../../css/Profile.css';
 import profile_image from '../../images/images.jpeg'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const Profile =() =>{ 
+const Profile =(props) =>{ 
     return(
       <div class="col-xs-12 col-sm-12 col-md-6 ">
       
         <div className="card profile">
             <div class="image_div ">
-              <Link to='profile_details'>
+              <NavLink to={`/profile_details/5`}>
               <img className=" image_profile" src={profile_image} alt=""/>
-            </Link>
+            </NavLink>
             </div>
         <div class="card-body mt-5">
-          <h6 class="card-title">Name</h6>
+          <h6 class="card-title">{props.username}</h6>
           <p class="card-text">Project Lead Developer at Appsdeployer | MERN Full-Stack-Developer</p>
         </div>
         <ul class="list-group list-group-flush text-left">

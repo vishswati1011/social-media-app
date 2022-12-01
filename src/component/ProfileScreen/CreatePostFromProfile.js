@@ -2,7 +2,7 @@ import '../../css/profile_details.css';
 import profile_image from '../../images/images.jpeg'
 import blog from '../../images/blog.jpg'
 import blog1 from '../../images/blog2.jpg'
-const CreatePostFromProfile =() =>{
+const CreatePostFromProfile =({ profileImage }) =>{
     return(
         
       
@@ -11,7 +11,7 @@ const CreatePostFromProfile =() =>{
 
         <div class="my_post">
           <div class="post_top">
-            <img src={profile_image} />
+            <img src={ profileImage } />
             <input
               type="text"
               placeholder="What's on you mind, John?"

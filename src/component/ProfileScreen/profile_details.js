@@ -2,22 +2,30 @@ import React from "react"
 import '../../css/profile_details.css';
 import profile_image from '../../images/images.jpeg'
 
-const ProfileDetails = ()=>{
+const ProfileDetails = ({username,friends,profileImage,friendPhoto})=>{
+  console.log("friendPhoto",friendPhoto)
     return(
-        <> <div className="row ml-0"> 
+        <>
+         {/* <div className="row ml-0">  */}
+        
         <div className="profile_details">
           <div className="col-xs-12 col-sm-12 col-md-6">
             <div className="pd_left">
               <div className="pd_row">
-                <img  alt="" src={profile_image} className="pd_img" />
+                <img  alt="" src={profileImage} className="pd_img" />
                 <div>
-                  <h3>Name</h3>
-                  <p>120 friends - 10 mutual</p>
+                  <h3>{username}</h3>
+                  <p>{friends} friends- 10 mutual</p>
+                  {/* {friendPhoto && friendPhoto.map((data,key)=>(
+                  <img alt="/" key={data.f_id} src={data.f_url} />
+
+                  ))} */}
                   <img alt="/"  src={profile_image} />
                   <img alt="/"  src={profile_image} />
                   <img alt="/"  src={profile_image} />
                   <img alt="/"  src={profile_image} />
                   <img alt="/"  src={profile_image} />
+
                 </div>
               </div>
             </div>
@@ -34,7 +42,7 @@ const ProfileDetails = ()=>{
             </div>
           </div>
         </div>
-        </div>
+        {/* </div> */}
         </>
     )
 }

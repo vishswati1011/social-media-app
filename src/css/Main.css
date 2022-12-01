@@ -1,23 +1,31 @@
 .main_outer{
     display: flex;
     flex-wrap: wrap;
-    /* width: 35rem; */
     height: 8rem;
     background-color: rgb(255, 255, 255);
     border-radius: 15px ;
-    /* padding-left: 10px;
-    padding-right: 15px; */
 }
 .post_input{
-    border-radius: 15px;
-    margin-left: 15px;
-    width: 25rem;
-    margin-top: 5px;
+ 
+    margin-top: 10px;
+    width: 28rem;
+    padding: 10px;
+    margin-left: 20px;
+    border: 0;
+    outline: none;
+    background: #efefef;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.active_like{
+  color: #45abff;
 }
 .image_Css{
     width: 50px;
     height: 50px;
     border-radius:30px ;
+    margin-left:15px;
+    margin-top:10px
 }
 .list_main{
     display: flex;
@@ -38,7 +46,19 @@
 
 
 /* Sidebar */
- 
+.card a {
+  color: #f8f9fa;
+  text-decoration: none !important;
+}
+.card a .username{
+  text-decoration: none !important;
+  color: #333 !important;
+  outline: 0;
+  /* color: white; */
+}
+
+
+
 .sidebar {
     position: sticky;
     top: 20px;
@@ -57,6 +77,14 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+  }
+  .comment__section{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .comment__section p{
+    padding:0 10px;
   }
   .feed__inputOptions {
     display: flex;
@@ -78,8 +106,8 @@
   }
   
   .inputOption h4, h5 {
-    font-size: 0.90rem;
-    margin-top: 0.5rem;
+    font-size: 0.90rem !important;
+    margin-top: 0.5rem !important;
     margin-left: 5px;
   }
      
@@ -126,7 +154,7 @@
     .main_outer{
         display: flex;
         flex-wrap: wrap;
-        width: 25rem;
+        /* width: 25rem; */
         height: 8rem;
         background-color: rgb(255, 255, 255);
       
